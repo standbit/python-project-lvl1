@@ -15,5 +15,8 @@ jobs:
         with:
             python-version: "3.8"
 
+      - name: Poetry install
+        run: poetry install
+        
       - name: make flake8-check
         run: make lint
