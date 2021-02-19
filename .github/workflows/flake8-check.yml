@@ -15,6 +15,11 @@ jobs:
         with:
             python-version: "3.8"
 
+      - name: Run poetry
+        uses: abatilo/actions-poetry@v2.0.0
+        with:
+            poetry-version: 1.1.4
+
       - name: Poetry install
         run: poetry install
         
